@@ -6,6 +6,7 @@ let clicks = 0;
 
 //========================================================================
 startGame.addEventListener("click", function () {
+  clicks = 0;
   squaresContainer.innerHTML = "";
 
   const difficulty = selectDifficulty.value;
