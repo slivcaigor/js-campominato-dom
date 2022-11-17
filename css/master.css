@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.wrapper {
+  background-color: #801515;
+  /* debug */
+  display: flex;
+  align-items: center;
+  padding: 100px 0px;
+  height: 778px;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-easy {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-mid {
+  width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-hard {
+  width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.credits {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 20px 0;
+}
+
+#play {
+  padding: 5px 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.styling {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#header {
+  background-color: #550000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+#footer {
+  background-color: #550000;
+}
+
+.credits span {
+  color: red;
+  font-size: 25px;
+}
+
+.points {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.controls span {
+  font-size: 20px;
+  color: white;
+}
+
+.controls {
+  display: flex;
+  gap: 20px;
+}
+
+.box.clicked {
+  background-color: rgb(0, 140, 255);
+}
+
+.box.lose {
+  background-color: rgb(255, 0, 13);
+}
+
+.box {
+  border: 1px solid white;
+  color: wheat;
+  font-weight: 600;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
