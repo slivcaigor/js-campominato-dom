@@ -53,13 +53,6 @@ img {
   flex-wrap: wrap;
 }
 
-.credits {
-  text-align: center;
-  font-size: 20px;
-  color: white;
-  padding: 20px 0;
-}
-
 #play {
   padding: 5px 15px;
   font-size: 20px;
@@ -82,17 +75,7 @@ img {
 
 #footer {
   background-color: #550000;
-}
-
-.credits span {
-  color: red;
-  font-size: 25px;
-}
-
-.points {
-  color: white;
-  font-size: 25px;
-  text-align: center;
+  height: 72px;
 }
 
 .controls span {

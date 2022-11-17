@@ -1,14 +1,3 @@
-/*
-In seguito l’utente clicca su una cella:
-se il numero è presente nella lista dei numeri generati - abbiamo calpestato una bomba - la cella si colora di rosso e la partita termina.
-Altrimenti la cella cliccata si colora di azzurro e l’utente può continuare a cliccare sulle altre celle.
-La partita termina quando il giocatore clicca su una bomba o quando raggiunge il numero massimo possibile di numeri consentiti (ovvero quando ha rivelato tutte le celle che non sono bombe).
-Al termine della partita il software deve comunicare il punteggio, cioè il numero di volte che l’utente ha cliccato su una cella che non era una bomba.
-
-Quando si clicca su una bomba e finisce la partita, evitare che si possa cliccare su altre celle;
-
-Quando si clicca su una bomba e finisce la partita, il software scopre tutte le bombe nascoste
-*/
 //========================================================================
 const selectDifficulty = document.getElementById("select_difficulty");
 const squaresContainer = document.querySelector(".container");
@@ -17,7 +6,6 @@ let clicks = 0;
 
 //========================================================================
 startGame.addEventListener("click", function () {
-
   squaresContainer.innerHTML = "";
 
   const difficulty = selectDifficulty.value;
@@ -65,11 +53,13 @@ startGame.addEventListener("click", function () {
 
       if (myArrNumEasy.includes(i) && parseInt(difficulty) === 1) {
         this.classList.add("lose");
-        alert("Hai perso")
+        alert("Mi dispiace, hai perso, il tuo punteggio è:  " + clicks)
       } else if (myArrNumMid.includes(i) && parseInt(difficulty) === 2) {
         this.classList.add("lose");
+        alert("Mi dispiace, hai perso, il tuo punteggio è:  " + clicks)
       } else if (myArrNumHard.includes(i) && parseInt(difficulty) === 3) {
         this.classList.add("lose");
+        alert("Mi dispiace, hai perso, il tuo punteggio è:  " + clicks)
       } else {
         scoreCount();
       }
@@ -127,7 +117,7 @@ function numSquares(difficulty) {
 //========================================================================
 function scoreCount() {
   clicks++;
-  document.querySelector(".points").innerHTML = clicks;
+  document.querySelector(".points").innerHTML = "Il tuo punteggio: " + clicks;
 }
 
 //========================================================================
