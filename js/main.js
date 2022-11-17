@@ -62,7 +62,7 @@ startGame.addEventListener("click", function () {
         this.classList.add("lose");
         alert("Mi dispiace, hai perso, il tuo punteggio è:  " + clicks)
       } else {
-        scoreCount();
+        clicks++;
       }
     });
   };
@@ -114,12 +114,5 @@ function numSquares(difficulty) {
     return numSquares;
   }
 };
-
-//========================================================================
-function scoreCount() {
-  clicks++;
-  document.querySelector(".points").innerHTML = "Il tuo punteggio: " + clicks;
-}
-
 //========================================================================
 
